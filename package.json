@@ -1,0 +1,22 @@
+{
+    "name": "nodeservers",
+    "version": "1.0.0",
+    "description": "Koa 2 project",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "keywords": [
+        "koa",
+        "async"
+    ],
+    "author": "Michael Liao",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zhuhaonav/nodeServers.git"
+    },
+    "dependencies": {
+        "koa": "2.0.0"
+    }
+}
