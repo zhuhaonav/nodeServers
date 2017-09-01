@@ -1,5 +1,6 @@
 const Koa = require('koa')
 const app = new Koa()
+const cors = require('koa-cors');
 const views = require('koa-views')
 const json = require('koa-json')
 const onerror = require('koa-onerror')
@@ -11,7 +12,8 @@ const users = require('./routes/users')
 
 // error handler
 onerror(app)
-
+//allowed crossarea
+app.use(cors());
 // middlewares
 app.use(bodyparser({
   enableTypes:['json', 'form', 'text']
