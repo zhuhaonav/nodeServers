@@ -1,11 +1,15 @@
 const router = require('koa-router')()
-
-router.get('/login', async (ctx, next) => {
-  if (ctx.params){
-    ctx.body = {success:true}
+router.post('/login', async (ctx, next) => {
+  let request = ctx.request.body;
+  if(request.username=='zhu'&&request.password=='hao'){
+    ctx.body = {
+      success:true,
+    }
   }
   else{
-    ctx.body = {success:false}
+    ctx.body = {
+      success:false,
+    }
   }
 })
 
